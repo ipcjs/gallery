@@ -49,6 +49,7 @@ import 'package:gallery/demos/reference/motion_demo_shared_x_axis_transition.dar
 import 'package:gallery/demos/reference/motion_demo_shared_y_axis_transition.dart';
 import 'package:gallery/demos/reference/motion_demo_shared_z_axis_transition.dart';
 import 'package:gallery/demos/reference/colors_demo.dart';
+import 'package:gallery/demos/reference/theme_data_demo.dart';
 import 'package:gallery/demos/reference/transformations_demo.dart';
 import 'package:gallery/demos/reference/typography_demo.dart';
 import 'package:gallery/l10n/gallery_localizations.dart';
@@ -1010,6 +1011,22 @@ List<GalleryDemo> otherDemos(GalleryLocalizations localizations) {
           description: localizations.demoColorsDescription,
           documentationUrl: '$_docsBaseUrl/material/MaterialColor-class.html',
           buildRoute: (_) => const ColorsDemo(),
+          code: CodeSegments.colorsDemo,
+        ),
+      ],
+      category: GalleryDemoCategory.other,
+    ),
+    GalleryDemo(
+      title: 'ThemeData',
+      icon: GalleryIcons.colors,
+      slug: 'themeData',
+      subtitle: localizations.demoColorsSubtitle,
+      configurations: [
+        GalleryDemoConfiguration(
+          title: 'ThemeData',
+          description: localizations.demoColorsDescription,
+          documentationUrl: '$_docsBaseUrl/material/MaterialColor-class.html',
+          buildRoute: (_) => const ThemeDataDemo(),
           code: CodeSegments.colorsDemo,
         ),
       ],
